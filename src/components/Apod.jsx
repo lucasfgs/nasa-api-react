@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
 import axios from 'axios'
-import style from 'test.css'
 
 const Apod = () => {
 
@@ -21,11 +20,11 @@ const Apod = () => {
     }
 
     return (
-        <div style={style.test}>
+        <section className="Apod">
             <h2>{apiData.title}</h2>
             <p>{apiData.explanation}</p>
             <img src={apiData.url} alt="" />
-        </div>
+        </section >
     )
 }
 
