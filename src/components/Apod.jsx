@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 
 import axios from 'axios'
 
+import Center from './Center'
+
 const Apod = () => {
 
     const [apiData, setApiData] = useState({})
@@ -22,7 +24,7 @@ const Apod = () => {
     return (
         <section className="Apod">
             <h2>{apiData.title}</h2>
-            <p>{apiData.explanation}</p>
+            <p>&#8195;&#8195;{apiData.explanation}</p>
             <img src={apiData.url} alt="" />
         </section >
     )
